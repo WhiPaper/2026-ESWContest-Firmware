@@ -49,5 +49,5 @@ direct_dependencies:
 - espressif/bme280
 - idf
 manifest_hash: dbc410f4c96d1f5f4ebc4aab836d9149e9bf511070a380e778ce366886202071
-target: esp32
+target: esp32c3
 version: 3.0.0

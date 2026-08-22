@@ -7,8 +7,8 @@
 #include "pm2008m.h"
 
 #define I2C_PORT I2C_NUM_0
-#define I2C_SDA GPIO_NUM_21
-#define I2C_SCL GPIO_NUM_22
+#define I2C_SDA GPIO_NUM_0
+#define I2C_SCL GPIO_NUM_1
 
 static const char *TAG = "sensor_test";
 
