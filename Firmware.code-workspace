@@ -1,0 +1,17 @@
+{
+	"folders": [
+		{
+			"path": "main"
+		},
+		{
+			"path": "sensor"
+		},
+		{
+			"path": "common"
+		}
+	],
+	"settings": {},
+	"extensions": { 
+		"recommendations": [ "espressif.esp-idf-extension" ]
+	}
+}
