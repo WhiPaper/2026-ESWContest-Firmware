@@ -1,5 +1,5 @@
 idf_component_register(
-    SRCS "main.c"
+    SRCS "main.cpp"
     INCLUDE_DIRS "."
-    REQUIRES pm2008m
+    REQUIRES service device_common ble_provisioning mqtt_bridge mqtt_adapter status_led esp_timer
 )

@@ -21,17 +21,34 @@
 
 # Build artifacts and directories
 **/build/
+**/build_*/
 build/
 *.o
 *.a
 *.out
-*.exe # For any host-side utilities compiled on Windows
+# Host-side utilities compiled on Windows
+*.exe
+
+# Flutter / Dart generated files
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.packages
+**/.pub-cache/
+**/coverage/
+**/doc/api/
+**/ios/Flutter/.last_build_id
+**/.widget_preview/
+
+# sdk is a reusable Flutter package; applications should keep their lockfiles.
+/sdk/pubspec.lock
 
 # ESP-IDF specific build outputs
 *.bin
 *.elf
 *.map
-flasher_args.json # Generated in build directory
+# Generated ESP-IDF flashing metadata
+flasher_args.json
 sdkconfig.old
 sdkconfig
 
@@ -58,6 +75,7 @@ CTestTestfile.cmake
 __pycache__/
 *.egg-info/
 dist/
+provisioning-labels/
 
 # Virtual environment folders
 venv/
@@ -76,6 +94,8 @@ Desktop.ini
 
 # User-specific configuration files
 *.user
-*.workspace # General workspace files, can be from various tools
-*.suo       # Visual Studio Solution User Options
-*.sln.docstates # Visual Studio
+# General workspace files created by IDEs and tools
+*.workspace
+# Visual Studio user-specific files
+*.suo
+*.sln.docstates
